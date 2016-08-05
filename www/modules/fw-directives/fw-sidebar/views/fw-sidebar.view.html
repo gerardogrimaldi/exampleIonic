@@ -1,0 +1,107 @@
+<ion-side-menus class="fw-sidebar-container">
+
+  <ion-pane ion-side-menu-content>
+    <fw-header></fw-header>
+    <ion-nav-view name="main"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left" width="{{::vm.windowWidth}}">
+    <header class="bar bar-header">
+      <div side="left">
+        <button class="button button-icon ion" ng-class="::{'ion-close': IS_IOS, 'ion-android-close': !IS_IOS}" ng-click="vm.onClickOpenSidebar()"></button>
+      </div>
+      <div class="title">
+        <img height="24" class="logo" src="modules/core/img/fw-logo-dark.svg" />
+      </div>
+    </header>
+
+    <ion-content has-header="true">
+      <div class="fw-sidebar-content">
+        <div class="list genres-list">
+          <a class="item item-avatar" ng-click="vm.onClickGoToProfile()" ng-if="vm.user._id">
+            <img fw-avatar-fallback ng-src="{{vm.user.image}}" />
+            <h2 ng-bind="vm.user.name"></h2>
+          </a>
+          <a ng-if="!vm.user._id" class="item" ng-class="{active: !vm.currentGenre}" ng-click="vm.onClickGoToLogin()" translate-once="fwSidebar.btnLogin"></a>
+          <!--<a class="item" ng-class="{active: !vm.currentGenre}" ng-click="vm.onClickGoToHome()" translate-once="fwSidebar.btnHome"></a>-->
+        </div>
+
+        <div ng-if="vm.programsLikedList.length" class="favorites-list">
+          <h1 class="content-title"><i ng-class="::{'ion-ios-star': IS_IOS, 'ion-android-star': !IS_IOS}"></i> <span translate-once="fwSidebar.favoritesLabel"></span></h1>
+          <fw-card-list-shows list="vm.programsLikedList"></fw-card-list-shows>
+        </div>
+
+        <div ng-if="::vm.showsList.length">
+          <div class="row">
+            <div class="col">
+              <h1 class="content-title" translate-once="fwSidebar.programasLabel"></h1>
+            </div>
+          </div>
+          <div class="row" ng-repeat="shows in ::vm.showsList track by $index">
+            <div class="col" ng-repeat="show in ::shows track by $index">
+              <div class="list card fw-card" ng-class="::show.hiddenCard" ng-click="vm.onClickGoToShow(show.slug)">
+                <img width="100%" height="auto" ng-src="{{::show.logo | thumb:183:116 || vm.DEFAULT_THUMB}}" class="div-image" />
+                <!--<img width="100%" height="auto" ng-src="{{vm.DEFAULT_THUMB}}" lazy-img="{{::show.logo | thumb:183:116}}" class="div-image" />-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div ng-if="::vm.seriesList.length">
+          <div class="row">
+            <div class="col">
+              <h1 class="content-title" translate-once="fwSidebar.webseriesLabel"></h1>
+            </div>
+          </div>
+          <div class="row" ng-repeat="shows in ::vm.seriesList track by $index">
+            <div class="col" ng-repeat="show in ::shows track by $index">
+              <div class="list card fw-card" ng-class="::show.hiddenCard" ng-click="vm.onClickGoToShow(show.slug)">
+                <img width="100%" height="auto" ng-src="{{::show.logo | thumb:183:116 || vm.DEFAULT_THUMB}}" class="div-image" />
+                <!--<img width="100%" height="auto" ng-src="{{vm.DEFAULT_THUMB}}" lazy-img="{{::show.logo | thumb:183:116}}" class="div-image" />-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h1 class="content-title" translate-once="fwSidebar.specialsLabel"></h1>
+          </div>
+        </div>
+        <div class="row" ng-repeat="shows in ::vm.specialsList track by $index">
+          <div class="col" ng-repeat="show in ::shows track by $index">
+            <div class="list card fw-card" ng-class="::show.hiddenCard" ng-click="vm.onClickGoToShow(show.slug)">
+              <img width="100%" height="auto" ng-src="{{::show.logo | thumb:183:116 || vm.DEFAULT_THUMB}}" class="div-image" />
+              <!--<img width="100%" height="auto" ng-src="{{vm.DEFAULT_THUMB}}" lazy-img="{{::show.logo | thumb:183:116}}" class="div-image" />-->
+            </div>
+          </div>
+        </div>
+        <div class="fw-sidebar-content">
+          <div class="list genres-list">
+            <a class="item" ng-class="{active: !vm.currentGenre && vm.showGenres}" ng-click="vm.onClickShowGeneres()">
+              <span translate-once="fwSidebar.btnGenres"></span>
+              <span ng-show="!vm.showGenres" class="icon-dropdown" ng-class="{'ion-android-arrow-dropdown': !vm.IS_IOS, 'ion-ios-arrow-down': vm.IS_IOS }"></span>
+              <span ng-show="vm.showGenres" class="icon-dropdown" ng-class="{'ion-android-arrow-dropup': !vm.IS_IOS, 'ion-ios-arrow-up': vm.IS_IOS }"></span>
+          </a>
+          <div class="genres-hidden-list" ng-show="vm.showGenres">
+              <a class="item" ng-repeat="genre in vm.genres track by $index" ng-class="{active: vm.currentGenre === genre.slug}" ng-click="vm.onClickGoToGenre(genre.slug)" ng-bind="::genre.translations[LOCALE].title || genre.title"></a>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="list translation-list">
+              <li class="item" ng-class="::{active: LOCALE === 'es_AR'}"><a href="#" href="#" ng-click="vm.onClickSetLanguage('es')">Español</a></li>
+              <li class="item" ng-class="::{active: LOCALE === 'en_US'}"><a href="#" href="#" ng-click="vm.onClickSetLanguage('en')">English</a></li>
+              <li class="item" ng-class="::{active: LOCALE === 'fr_FR'}"><a href="#" href="#" ng-click="vm.onClickSetLanguage('fr')">Francais</a></li>
+              <li class="item" ng-class="::{active: LOCALE === 'it_IT'}"><a href="#" href="#" ng-click="vm.onClickSetLanguage('it')">Italiano</a></li>
+              <li class="item" ng-class="::{active: LOCALE === 'pt_PT'}"><a href="#" href="#" ng-click="vm.onClickSetLanguage('pt')">Portugues</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>

@@ -1,0 +1,111 @@
+@import "../../../core/css/variables";
+.fw-sidebar-container {
+  .bar-header {
+    .title {
+      text-align: left;
+      padding: 0 0 0 35px;
+    }
+    .ion-close:before {
+      font-size: 22px !important;
+    }
+  }
+  ion-content,
+  ion-side-menu {
+    background-color: #333333;
+  }
+  .fw-sidebar-content {
+    background-color: #303030;
+    margin-top: 44px;
+    .genres-list .item {
+      background-color: #303030;
+      border: 1px solid #222;
+      color: #5A5A5A;
+      padding-left: 44px;
+      &.active {
+        color: #fff;
+      }
+    }
+    .row {
+      margin: 0;
+      padding: 0;
+      .col {
+        .card {
+          margin-top: 0 !important;
+          background-color: #303030;
+          a {
+            display: block;
+            background-color: #303030;
+          }
+        }
+      }
+    }
+    .content-title {
+      font-weight: normal;
+      color: @yellow;
+      padding-left: 40px;
+    }
+    .item-avatar {
+      padding-left: 94px !important;
+      padding-top: 25px;
+      font-size: 26px;
+      h2 {
+        color: #5A5A5A;
+      }
+      img {
+        left: 40px;
+      }
+    }
+  }
+  .icon-dropdown {
+    float: right;
+  }
+  .translation-list .item {
+    background-color: #303030;
+    border: 1px solid #222;
+    padding-left: 44px;
+    a {
+      background-color: #303030;
+      color: #C5C5C5;
+      text-decoration: none;
+    }
+  }
+  .favorites-list {
+    .content-title {
+      padding-left: 25px;
+    }
+  }
+}
+
+.tablet.ipad {
+  .fw-sidebar-container .fw-sidebar-content .item-avatar {
+    padding-top: 40px;
+    img {
+      top: 30px;
+    }
+  }
+}
+
+.mobile.iphone {
+  .fw-sidebar-container .fw-sidebar-content {
+    padding-top: 20px;
+  }
+}
+.platform-android {
+  .fw-sidebar-container {
+    .fw-sidebar-content {
+      .genres-list .item,
+      .translation-list .item {
+        color: #C5C5C5;
+        &.active {
+          border-left: 3px solid @yellow;
+          color: #C5C5C5;
+        }
+      }
+      .item-avatar {
+        h2 {
+          color: #C5C5C5;
+        }
+      }
+    }
+  }
+}

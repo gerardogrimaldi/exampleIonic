@@ -1,0 +1,35 @@
+<div class="fw-header-container">
+  <ion-nav-bar type="bar-positive" back-button-type="button-icon" back-button-icon="ion-ios7-arrow-back" animation="nav-title-slide-ios7" ng-class="{'search-bar-active': vm.showSearchBar}">
+    <ion-nav-buttons side="left" class="sidebar-btn-container">
+      <button class="button button-icon ion" ng-class="{'ion-navicon-round': IS_IOS, 'ion-android-menu': !IS_IOS}" ng-click="vm.onClickOpenSidebar()"></button>
+    </ion-nav-buttons>
+    <ion-nav-title class="title" ng-class="{'no-logo': vm.sectionTitle}">
+      <img ng-if="!vm.sectionTitle" height="24" class="logo" src="modules/core/img/fw-logo-dark.svg" />
+      <h1 class="title" ng-if="vm.sectionTitle" ng-bind="vm.sectionTitle"></h1>
+
+      <div class="search-bar-container">
+        <div class="item-input-inset">
+          <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <form ng-submit="vm.onSubmitSearch()">
+              <input type="search" placeholder="Buscar" ng-change="vm.onChangeSearch()" ng-model="vm.search" />
+            </form>
+          </label>
+          <button class="button button-clear" ng-click="vm.onClickShowSearchBar()" translate-once="btns.cancel"></button>
+        </div>
+
+        <div class="results-list" ng-show="vm.results.length">
+          <div class="bg"></div>
+          <div class="list">
+            <a class="item" ng-click="vm.onClickResult(item)" ng-repeat="item in vm.results" ng-bind="item.title"></a>
+          </div>
+        </div>
+      </div>
+    </ion-nav-title>
+    <ion-nav-buttons side="right">
+      <button ng-if="::IS_IOS" class="button button-icon ion" ng-class="{'ion-ios-bell': vm.user.pendingNotifications, 'ion-ios-bell-outline': !vm.user.pendingNotifications}" ng-click="vm.onClickNotification()"></button>
+      <button ng-if="::!IS_IOS" class="button button-icon ion" ng-class="{'ion-android-notifications': vm.user.pendingNotifications, 'ion-android-notifications-none': !vm.user.pendingNotifications}" ng-click="vm.onClickNotification()"></button>
+      <button class="button button-icon ion" ng-class="::{'ion-ios-search': IS_IOS, 'ion-android-search': !IS_IOS}" ng-click="vm.onClickShowSearchBar()"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+</div>

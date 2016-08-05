@@ -1,0 +1,11 @@
+<div class="fw-header-container fw-sub-header-container">
+  <ion-header-bar align-title="center" class="bar-stable">
+    <div class="buttons">
+      <button class="button button-icon ion" ng-class="::{'ion-ios-arrow-back': IS_IOS, 'ion-android-arrow-back': !IS_IOS}" ng-click="vm.onClickGoBack()"></button>
+    </div>
+    <h1 class="title" ng-bind="title"></h1>
+    <div class="buttons btn-share-container">
+      <button class="button button-icon ion" ng-class="::{'ion-ios-upload-outline': IS_IOS, 'ion-android-share': !IS_IOS}" ng-click="vm.onClickShare()"></button>
+    </div>
+  </ion-header-bar>
+</div>

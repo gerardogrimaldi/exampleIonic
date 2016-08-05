@@ -4,8 +4,13 @@ angular.module('core')
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 
+      /*.state('main', {
+        abstract: true,
+        templateUrl: 'modules/main/views/main.view.html',
+        controller: 'MainController as vm'
+      })*/
+
       .state('app', {
-        url: '/app',
         abstract: true,
         templateUrl: 'templates/menu.html',
         controller: 'AppCtrl'
@@ -48,5 +53,5 @@ angular.module('core')
         }
       });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/playlists');
+    $urlRouterProvider.otherwise('/playlists');
   });

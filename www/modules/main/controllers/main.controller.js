@@ -1,8 +1,5 @@
-'use strict';
-
-APP.ADD_MODULE('controller');
-
-angular.module('controller')
+angular
+  .module('main')
   .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
   // With the new view caching in Ionic, Controllers are only called

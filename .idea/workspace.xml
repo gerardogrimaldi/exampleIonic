@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e0c63c7-c680-4341-885c-5535b6e92003" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/controllers/fw-sidebar.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/css/fw-sidebar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/css/fw-sidebar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/directives/fw-sidebar.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/fw-sidebar.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/views/fw-sidebar.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/modules/main/views/main.view.html" afterPath="$PROJECT_DIR$/www/modules/main/views/main.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/fw-card.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/fw-card.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/fw-icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/fw-icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/variables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/css/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/ads.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/auth.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/comments.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/comscore.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/downloads.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/episodes.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/error-notitications.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/genres.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/home.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/limit.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/list-generators.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/loading.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/location-params.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/log.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/payments.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/products.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/profile.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/rate-app.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/records.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/search.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/session.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/shares.services.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/shows.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/tally.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/uploads.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/user-pictures.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/modules/core/services/user-wached.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="exampleIonic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,58 +67,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ads.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/modules/core/services/ads.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="61" column="68" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
+            <state relative-caret-position="187">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/modules/main/views/main.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/modules/main/controllers/main.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/modules/core/config/core.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/modules/main/config/main.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fw-sidebar.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/css/fw-sidebar.css">
+      <file leaf-file-name="core.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/modules/core/css/core.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -129,8 +129,8 @@
         <option value="$PROJECT_DIR$/www/modules/core/config/core.config.js" />
         <option value="$PROJECT_DIR$/www/modules/main/config/main.config.js" />
         <option value="$PROJECT_DIR$/www/modules/main/controllers/main.controllers.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/modules/main/views/main.view.html" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -147,7 +147,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1173" />
+    <option name="width" value="964" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -245,11 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fw-directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fw-sidebar" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,15 +267,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fw-directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fw-sidebar" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exampleIonic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exampleIonic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exampleIonic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exampleIonic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,9 +341,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\usuario\Documents\GitHub\exampleIonic\www\modules\core" />
       <recent name="C:\Users\usuario\Documents\GitHub\exampleIonic\www\modules\fw-directives" />
       <recent name="C:\Users\usuario\Documents\GitHub\exampleIonic\www\modules\main" />
-      <recent name="C:\Users\usuario\Documents\GitHub\exampleIonic\www\modules\core" />
       <recent name="C:\Users\usuario\Documents\GitHub\exampleIonic\www\modules\core\config" />
       <recent name="C:\Users\usuario\Documents\GitHub\exampleIonic" />
     </key>
@@ -381,19 +425,19 @@
       <updated>1470257098986</updated>
       <workItem from="1470257104757" duration="13000" />
       <workItem from="1470319989567" duration="76591000" />
-      <workItem from="1470406350844" duration="6737000" />
+      <workItem from="1470406350844" duration="6993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83341000" />
+    <option name="totallyTimeSpent" value="83597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1173" height="1057" extended-state="0" />
+    <frame x="-7" y="0" width="964" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41762114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.511879" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -623,14 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="61" column="68" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/modules/main/views/main.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -648,6 +684,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/modules/fw-directives/fw-sidebar/css/fw-sidebar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="71" selection-start-line="0" selection-start-column="71" selection-end-line="0" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modules/fw-directives/fw-header/css/fw-header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modules/core/services/ads.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/modules/core/css/core.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

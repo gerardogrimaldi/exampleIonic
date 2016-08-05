@@ -1,0 +1,238 @@
+@import "variables";
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+html,
+body {
+  background-color: @gray-drark;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.870588);
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+}
+
+.fw-btn {
+  background-color: #fff;
+  margin: 0 !important;
+  padding: 10px;
+  span {
+    color: #000;
+  }
+  &.btn-call-to-action {
+    background-color: @yellow !important;
+  }
+}
+
+.platform-android {
+  .fw-btn {
+    font-size: 16px !important;
+    padding: 5px 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: 0;
+    color: #6C6C6C;
+  }
+}
+
+.tablet {
+  .platform-android {
+    .fw-btn-container {
+      text-align: center;
+      .fw-btn {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.fb-login-btn,
+.fb-login-btn:hover,
+.fb-login-btn:focus {
+  background-color: @fb-color;
+  span {
+    color: @page-background;
+  }
+}
+
+.tw-login-btn,
+.tw-login-btn:hover,
+.tw-login-btn:focus {
+  background-color: @tw-color;
+  color: @page-background;
+}
+
+a[target=_blank],
+a[href^=http],
+a[rel=nofollow] {
+  color: #03A49C;
+}
+
+.content-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+}
+
+#section-container {
+  display: block;
+  padding: 0 0 20px 0;
+}
+
+.undecorated-link:hover {
+  text-decoration: none;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+
+.header-profile-image {
+  opacity: 0.8;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open .header-profile-image,
+a:hover .header-profile-image {
+  opacity: 1;
+}
+
+.fw-ad {
+  display: none;
+  &.ad-loaded {
+    display: flex;
+  }
+  &.fw-ad-top {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.list:last-child.card {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 0;
+}
+
+.bar {
+  background: @yellow;
+  &.bar-stable {
+    background: @yellow;
+  }
+  .title {
+    font-weight: bold;
+  }
+}
+
+.logo {
+  margin-top: 9px;
+}
+
+.view-container .scroll-content {
+  background-color: #F2F2F2;
+}
+
+.platform-android .view-container .scroll-content {
+  background-color: #FAFAFA;
+}
+
+.spinner svg {
+  stroke: @yellow;
+  fill: @yellow;
+}
+
+.rate-app-container {
+  .button-energized {
+    background-color: @yellow;
+  }
+}
+
+.ads-container {
+  background-color: transparent;
+  text-align: center;
+  ion-header-bar {
+    background-color: transparent !important;
+    text-align: right;
+    display: inline-block;
+  }
+  .ads-content {
+    background-color: transparent;
+    text-align: center;
+  }
+}
+
+.mobile {
+  .ads-container {
+    background-color: rgba(0, 0, 0, .75);
+    .ads-content {
+      background-color: rgba(0, 0, 0, .75);
+    }
+  }
+}
+
+.show-more {
+  padding: 15px 10px 10px 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 99;
+}
+

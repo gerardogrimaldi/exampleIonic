@@ -1,0 +1,32 @@
+@import "variables";
+.fw-icon {
+  background: transparent no-repeat;
+  background-image: url("/modules/core/img/fw-icon-sprite.png");
+  width: 52px;
+  height: 52px;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  margin: -26px 0 0 -26px;
+  z-index: 1;
+  position: absolute;
+  &.facebook {
+    background-position: -1168px -20px;
+  }
+  &.twitter {
+    background-position: -1238px -20px;
+  }
+  &.google-plus {
+    background-position: -1308px -20px;
+  }
+  &.embed {
+    background-position: -1378px -20px;
+  }
+}
+
+.ion-android-favorite,
+.ion-android-favorite-outline,
+.ion-ios-heart,
+.ion-ios-heart-outline {
+  color: @yellow;
+}

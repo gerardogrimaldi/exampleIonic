@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+  <h<meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *">
+    <title>FWTV APP</title>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!-- injector:css -->
+    <link rel="stylesheet" href="lib/ionic/css/ionic.min.css">
+    <link rel="stylesheet" href="lib/angular-carousel/dist/angular-carousel.min.css">
+    <link rel="stylesheet" href="modules/comments/css/comments.css">
+    <link rel="stylesheet" href="modules/core/css/core.css">
+    <link rel="stylesheet" href="modules/core/css/fw-card.css">
+    <link rel="stylesheet" href="modules/core/css/fw-icons.css">
+    <link rel="stylesheet" href="modules/core/css/variables.css">
+    <link rel="stylesheet" href="modules/errors/css/errors.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-btn-fav/css/fw-btn-fav.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-btn-upload-photo/css/fw-btn-upload-photo.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-card-list/fw-photos-user/css/fw-card-list-photos-user.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-card-list/fw-photos/css/fw-card-list-photos.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-card-list/fw-shows/css/fw-card-list-shows.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-card-list/fw-videos-user/css/fw-card-list-videos-user.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-card-list/fw-videos/css/fw-card-list-videos.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-comments/css/fw-comments.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-header/css/fw-header.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-players/fw-cameratag/css/fw-cameratag-player.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-players/fw-kaltura/css/fw-kaltura-player.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-players/fw-live/css/fw-live-player.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-players/fw-player/css/fw-player.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-players/fw-youtube/css/fw-youtube-player.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-show/fw-header/css/fw-show-header.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-show/fw-tags/css/fw-show-tags.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-sidebar/css/fw-sidebar.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-social-toolbar/fw-share/css/fw-player-share-toolbar.css">
+    <link rel="stylesheet" href="modules/fw-directives/fw-upload-video/css/fw-dialog-upload-video.css">
+    <link rel="stylesheet" href="modules/genre/css/genre.css">
+    <link rel="stylesheet" href="modules/home/css/home.css">
+    <link rel="stylesheet" href="modules/login/css/login.css">
+    <link rel="stylesheet" href="modules/notifications/css/notifications.css">
+    <link rel="stylesheet" href="modules/profile/css/profile.css">
+    <link rel="stylesheet" href="modules/search/css/search.css">
+    <link rel="stylesheet" href="modules/show/blog/css/blog-post.css">
+    <link rel="stylesheet" href="modules/show/blog/css/blog.css">
+    <link rel="stylesheet" href="modules/show/episodes/css/episodes.css">
+    <link rel="stylesheet" href="modules/show/fototeca/css/fototeca.css">
+    <link rel="stylesheet" href="modules/show/index/css/index.css">
+    <link rel="stylesheet" href="modules/show/landing/css/landing.css">
+    <link rel="stylesheet" href="modules/show/photos/css/photos.css">
+    <link rel="stylesheet" href="modules/show/player/css/player.css">
+    <link rel="stylesheet" href="modules/show/serie/css/serie.css">
+    <link rel="stylesheet" href="modules/show/videos/css/videos.css">
+    <link rel="stylesheet" href="modules/show/videoteca/css/videoteca-player.css">
+    <link rel="stylesheet" href="modules/show/videoteca/css/videoteca.css">
+    <!-- endinjector -->
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
 
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-    <!-- your app's js -->
-    <script src="cordova.js"></script>
     <!-- injector:js -->
     <script src="lib/ionic/js/ionic.bundle.min.js"></script>
     <script src="lib/algoliasearch/dist/algoliasearch.angular.min.js"></script>

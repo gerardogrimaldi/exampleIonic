@@ -8,15 +8,15 @@ window.APP = (function() {
     NAME: NAME,
     DEPENDENCIES: [
       'ionic',
-      /*'ngCordova',*/
-      /*     'ngCordovaOauth',
-       'algoliasearch',
-       'angularLazyImg',
-       'angular-carousel',
-       'angular-cache',
-       'ngTouch',
-       'pascalprecht.translate',
-       'offline'*/
+      'ngCordova',
+      'ngCordovaOauth',
+      'algoliasearch',
+      'angularLazyImg',
+      'angular-carousel',
+      'angular-cache',
+      'ngTouch',
+      'pascalprecht.translate',
+      'offline'
     ],
     ADD_MODULE: function(moduleName, dependencies) {
       angular.module(moduleName, dependencies || []);

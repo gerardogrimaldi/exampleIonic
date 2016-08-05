@@ -5,9 +5,9 @@ angular
   .service('GenresSrv', ['$http', 'PATHS', '$rootScope',
     function($http, PATHS, $rootScope) {
       function getTranslations() {
-        if ($rootScope.LOCALE.indexOf('es') === -1) {
+        /*if ($rootScope.LOCALE.indexOf('es') === -1) {
           return ',translations(' + $rootScope.LOCALE + '(description))';
-        }
+        }*/
 
         return '';
       }

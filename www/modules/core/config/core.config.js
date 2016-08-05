@@ -3,20 +3,7 @@
 angular.module('core')
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-
-      /*.state('main', {
-        abstract: true,
-        templateUrl: 'modules/main/views/main.view.html',
-        controller: 'MainController as vm'
-      })*/
-
-      .state('app', {
-        abstract: true,
-        templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl'
-      })
-
-      .state('app.search', {
+      .state('main.search', {
         url: '/search',
         views: {
           'menuContent': {
@@ -25,7 +12,7 @@ angular.module('core')
         }
       })
 
-      .state('app.browse', {
+      .state('main.browse', {
         url: '/browse',
         views: {
           'menuContent': {
@@ -33,7 +20,7 @@ angular.module('core')
           }
         }
       })
-      .state('app.playlists', {
+      .state('main.playlists', {
         url: '/playlists',
         views: {
           'menuContent': {
@@ -43,7 +30,7 @@ angular.module('core')
         }
       })
 
-      .state('app.single', {
+      .state('main.single', {
         url: '/playlists/:playlistId',
         views: {
           'menuContent': {
